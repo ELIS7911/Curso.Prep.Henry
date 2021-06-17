@@ -1,0 +1,18 @@
+VARIABLES: sirven para guardar algún valor de algo para usarlo más tarde. var (nombre var) = valor
+
+STRINGS: Son bloques de texto que van entre comillas. Ej. var nombreamigo = "Juan";
+
+FUNCIONES (argumentos, return): Sirven para trabajar con las variables, para realizar una determinada tarea. Empiezan con la palabra function. 
+Ejemplo function nombrefuncion () {código a ejecutar}. Para ejecutarse siempre necesita el nombre de la función y los paréntesis. nombrefunción ();
+
+DECLARACIONES if: sirve para verificar si una condición se cumple o no. Si se cumple la función arrojará true, y sino será false. 
+Ej: function puedesalirsolo(edad) {
+    if (edad > 15) {
+        return true;
+    }
+    return false;
+}
+
+puedesalirsolo(13); // false
+
+BOOLEANOS (true, false): Trabaja con codigo binario y siempre hay 2 opciones. true/false si/no 0/1
