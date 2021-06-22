@@ -1,0 +1,12 @@
+FOR: Bucle que sirve para hacer tareas repetitivas.
+for (var i = 0; variable que va a usar para contar la cantidad de repeticiones que va a hacer)
+i <= 100; condición de frenado
+i++) cada cuánto quiero que se incremente el valor, uno en uno, dos en dos, etc.
+{// bloque de código a repetir}
+
+OPERADORES LOGICOS: Son como operadores matemáticos pero para tipos de datos booleanos.
+Reciben 2 operandos y arrojan true o false, según corresponda.
+&& (AND - Y) Para ser verdadera ambas expresiones tienen que ser true.
+|| (OR - O) Solo devuelve FALSE si ambas expresiones son falsas.
+! (NOT). Devuelve el valor booleano opuesto de lo que le pasa. 
+!== (no es igual) Algo que es true en este caso seria NOT TRUE, o sea FALSE.
