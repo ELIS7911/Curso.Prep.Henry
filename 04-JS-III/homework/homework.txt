@@ -1,0 +1,8 @@
+ARREGLO: Es una lista/colección de elementos con un orden de posición que nos permite acceder a los datos a través 
+de su índice y modificarlos, agregar nuevos o eliminarlos. 
+En un arreglo se puede guardar cualquier tipo de datos strings, funciones, numeros, otros arrays.
+array.length: da la cantidad de elementos que componen el array. El índice de posición en el array siempre arranca en cero.
+El arreglo se define con var nombrearreglo = [elemento1, elemento2, elemento3]
+Para invocarlo se hace con nombrearreglo [0] El cero es el indice del elemento al cual estamos invocando.
+array.push () permite agregar un elemento al final del arreglo.
+array.pop () devuelve el ultimo valor del arreglo y lo saca de la lista.
