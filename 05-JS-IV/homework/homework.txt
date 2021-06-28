@@ -1,0 +1,24 @@
+OBJETOS: Mientras que los arrays tienen múltiples elementos relacionados unos con otros, 
+los objetos tienen mucha información sobre una sola cosa (colección de PROPIEDADES). Se definen usando llaves.
+var nuevoobj = {};
+   clave         :         valor,
+(propiedad)    (valor asignado a la propiedad)
+
+Las PROPIEDADES serian los índices en el caso de los arreglos, sólo que en éstos son numéricos,
+en cambio en los objetos son nombres (strings) que designan a los valores.
+
+Para invocar la función puedo usar la BRACKET NOTATION o la DOT NOTATION. Ej:
+Javier ['edad'] // 33
+Javier.edad // 33
+Resulta más sencilla de escribir la DOT NOTATION, pero para variables y para recorrer un objeto 
+conviene utilizar la BRACKET NOTATION.
+
+METODO: Las funciones guardadas en los objetos se llaman métodos.
+THIS Hace referencia al objeto desde el cual se está invocando el método. 
+Esto evita repetir procesos manualmente. Yo puedo definir una función e incluírla como
+método en cada objeto, para así no tener que repetir la definición de la misma en cada uno de los ellos.
+
+BUCLE FOR...IN Sirve para iterar sobre cada par clave-valor del objeto.
+for (var CLAVE in OBJETO) {
+    console.log (CLAVE);
+}
