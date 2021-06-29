@@ -1,0 +1,40 @@
+CONSTRUCTORS de Clases: Es una función que nos va a permitir construír objetos. 
+Los objetos de las clases se llaman INSTANCIAS. Por convención empiezan con mayúscula.
+
+function Nombredelaclase () { 
+    this.nombre = "nombre1";
+    this.apellido = "apellido1";
+}
+var nombre1 = new Nombredelaclase ();
+  console.log (nombre1)
+(CREA UN NUEVO OBJETO)
+
+Nombredelaclase {nombre: 'nombre1', apellido: 'apellido1'}
+(CLASE EN LA QUE FUE CONSTRUIDO EL OBJETO)
+
+KEYWORD NEW: - Crea un objeto nuevo vacio
+               var obj = {};
+             - Invoca a la funcion constructora con los valores que usamos y "bindea" con el objeto (que valor va a tomar THIS)
+               Car ('audi', 1500, 'verde'). bind (objeto);
+             - Retorna el objeto
+
+PROTOTIPO: Todos los objetos tienen un prototipo. El prototipo de los objetos creados es el constructor.
+Sirve para compartir metodos entre objetos (para no repetirlos).
+Si la propiedad que invoco la tiene el objeto, la busca ahí. Sino va a buscarla al prototipo.
+
+CONSTRUCTOR
+function Persona (edad) {
+    this.edad = edad;
+}
+
+PROTOTIPO
+Persona.prototype.getEdad = function () {
+    return this.edad;
+}
+(getEdad es propiedad del prototipo Persona)
+
+OBJETOS NUEVOS (INSTANCIAS)
+var obj = newPersona (22);
+var obj2 = newPersona (34);
+var obj3 = newPersona (27);
+
