@@ -1,5 +1,5 @@
 CONSTRUCTORS de Clases: Es una función que nos va a permitir construír objetos. 
-Los objetos de las clases se llaman INSTANCIAS. Por convención empiezan con mayúscula.
+Los objetos de las clases se llaman INSTANCIAS. Por convención los CONSTRUCTORES empiezan con mayúscula.
 
 function Nombredelaclase () { 
     this.nombre = "nombre1";
