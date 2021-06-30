@@ -1,0 +1,39 @@
+CALLBACKS: Es cuando una función se pasa como argumento a otra función.
+
+function decirHola (usuario) {
+    return 'Hola, ' + usuario + '!';
+}
+
+function saludar (usuario, cb) {
+    return cb (usuario);
+}
+
+saludar ('Eliana', decirHola);
+
+> Hola, Eliana!
+
+CrearSaludo (15, function (a){
+    return a * 2
+});
+> 30
+
+Recibe un parametro y una función e invoca esa función con ese parametro.
+
+CALLBACKS EN ARRAYS :Sirve para invocar una función en todos los elementos de un arreglo.
+
+alumnos.forEach (function (elemento, indice){
+    console.log (elemento);
+})
+
+.MAP: Mapea cada elemento con la función y lo convierte en un nuevo arreglo.
+
+var nuevoAlumnos = alumnos.map (function (elemento, indice){
+    return elemento.capitalize();
+})
+
+En este caso transforma la primera letra de cada elemento alumno a mayuscula y devuelve el nuevo Array.
+
+.REDUCE: A partir de un array devuelve un unico valor. Recibe 4 argumentos: acumulador, valor actual, indice actual y array.
+
+var sumareduce = nums.reduce (function (acumulador, elemento){
+    return acumulador + elemento;}, 0);
